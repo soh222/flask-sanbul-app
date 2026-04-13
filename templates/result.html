@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산불 예측 결과</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            padding: 12px 20px;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            background-color: #5bc0de;
+            color: white;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 4px;
+            margin-right: 6px;
+            font-size: 14px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .title-box {
+            background-color: #dff0d8;
+            color: #3c763d;
+            padding: 14px 16px;
+            font-size: 28px;
+            border-radius: 4px;
+            margin-bottom: 40px;
+        }
+
+        .result-text {
+            font-size: 22px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .result-value {
+            font-size: 24px;
+            color: #222;
+            margin-bottom: 40px;
+        }
+
+        .footer {
+            color: #555;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" class="nav-btn">Home</a>
+        <a href="/prediction" class="nav-btn">FF Prediction</a>
+    </div>
+
+    <div class="container">
+        <div class="title-box">산불 예측 결과</div>
+
+        <div class="result-text">산불 발생 예상 면적:</div>
+        <div class="result-value">{{ prediction }} km²</div>
+
+        <div class="footer">© 2022810052 이소희</div>
+    </div>
+</body>
+</html>
